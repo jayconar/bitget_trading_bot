@@ -1,0 +1,15 @@
+api_url = "https://api.bitget.com"
+servertime_url = "/api/v2/public/time"
+symbols_url = "/api/v2/mix/market/tickers"
+candles_url = "/api/v2/mix/market/candles"
+
+orderbook_url = "/api/v2/mix/market/merge-depth"
+orders_url = "/api/v2/mix/order/detail"
+open_orders_url = "/api/v2/mix/order/orders-pending"
+position_status_url = "/api/v2/mix/position/single-position"
+positions_url = "/api/v2/mix/position/all-position"
+trade_history_url = "/api/v2/mix/market/fills"
+
+place_order_url = "/api/v2/mix/order/place-order"
+cancel_all = "/api/v2/mix/order/cancel-all-orders"
+close_position_url = "/api/v2/mix/order/close-positions"
