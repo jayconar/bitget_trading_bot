@@ -11,7 +11,7 @@ from .data_handler import read_json
 def notify():
     """Sends an email to the client email address"""
     # Email configuration
-    smtp_server = "smtp.zoho.com"
+    smtp_server = "smtp.gmail.com"
     smtp_port = 587  # Port for TLS
     sender_email, receiver_email = read_json("sender_email", "client_email").values()
 

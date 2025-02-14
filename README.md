@@ -30,9 +30,20 @@ The bot also supports periodic **email notifications** to keep you informed abou
 ## Installation
 ### Prerequisites
 - Python 3.8 or higher
-- Bitget API keys (create on the Bitget Exchange platform)
-- Email account with App password for notifications (Gmail recommended)
-
+- Install all the necessary libraries listed in `requirements.txt`using the following command:
+   ```bash
+   pip install -r requirements.txt
+   ```
+- Create Bitget API keys (create on the Bitget Exchange platform) and Save them as environmental variables using the following commands:
+  ```bash
+   setx bitget_key "<API KEY HERE>"
+   setx bitget_private "<SECRET KEY HERE>"
+   setx bitget_passphrase "<PASSPHRASE HERE>"
+   ```
+- Email account with App password (or account password) for notifications (Don't forget to change the smtp server according to your email in `send_email.py`)
+  ```bash
+   setx email_password "<EMAIL PASSWORD HERE>"
+  ```
 ---
 
 ## Usage
@@ -44,19 +55,20 @@ The bot also supports periodic **email notifications** to keep you informed abou
    - Analyze the market for cointegrated pairs.
    - Monitor spread deviations and execute trades.
    - Send email updates with trade details.
-
+3. Terminate the program to stop trading:
+   - Simply stop the running program to end bot activity. 
+   - If you are not sure, just restart your machine or delete the API keys as a kill switch. 
 ---
 
 ## Configuration
-You can adjust the different parameters in the `config.py` file.
-
+You can adjust the different parameters in the `config.json` file.
+Make sure to save the bitget API keys & email password as environmental variables.
 ---
 
 ## Risk Disclaimer
-Trading cryptocurrencies involves significant risk and may result in the loss of capital. This bot is intended for educational and research purposes only. Use it at your own risk.
-
+Trading cryptocurrencies involves significant risk and may result in the loss of capital. This bot is intended for educational and research purposes only.
+I have never tested this bot with real money. I cannot guarantee that it will generate you profits. Use it at your own risk.
 ---
 
 ## Contact
 For any inquiries or support, reach out at jaysubhashconar@gmail.com.
-
